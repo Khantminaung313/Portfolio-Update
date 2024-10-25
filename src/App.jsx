@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import BaseLayout from "./layouts/BaseLayout"
-import Landing from "./pages/landing"
+import LandingPage from "./pages/LandingPage"
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<BaseLayout/>}>
-          <Route index element={<Landing />}></Route>
+          <Route index element={<LandingPage />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
