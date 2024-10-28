@@ -1,4 +1,4 @@
-
+import dean from "./assets/Dean.pdf";
 
 const Header = () => {
   return (
@@ -8,10 +8,10 @@ const Header = () => {
                 <a href="#hero" className="hover:text-soft_blue hover:underline">Home</a>
                 <a href="#about" className="hover:text-soft_blue hover:underline">About</a>
                 <a href="#services" className="hover:text-soft_blue hover:underline">Services</a>
-                <a href="#skills" className="hover:text-soft_blue hover:underline">Skills</a>
+                <a href="#projects" className="hover:text-soft_blue hover:underline">Projects</a>
                 <a href="#contact" className="hover:text-soft_blue hover:underline">Contact</a>
             </nav>
-            <a href="" className="px-8 py-2 bg-soft_blue text-white text-sm cursor-pointer rounded" download>Download CV</a>
+            <a href={dean} className="px-8 py-2 bg-soft_blue text-white text-sm cursor-pointer rounded" download>Download CV</a>
         </div>
     </div>
   )

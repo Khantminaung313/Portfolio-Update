@@ -4,7 +4,7 @@ import wave3 from "../assets/wave3.png";
 const Hero = () => {
 	return (
 		<>
-			<div id="hero" className="h-screen relative overflow-hidden bg-soft_blue flex justify-center items-center">
+			<div id="hero" className="min-h-screen relative overflow-hidden bg-soft_blue flex justify-center items-center">
                 <div className="absolute bottom-0 left-0 w-full">
                     <img className="w-full h-[300px]" src={wave3} alt="wave" />
                 </div>

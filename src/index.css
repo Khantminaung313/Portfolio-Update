@@ -11,24 +11,30 @@ html{
   list-style: none;
   text-decoration: none;
   font-family: "poppins";
+  overflow-x: hidden;
   scroll-behavior: smooth;
-  overflow-y: scroll;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
 }
 
 body{
-  overflow-y: visible;
-  position: relative;
-  height: unset;
-}
-
-html, body{
   overflow-x: hidden;
-  margin: 0;
 }
 
 section{
-  padding-top: 4rem;
-  width: 100%;
+  @apply w-full pt-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28;
+}
+
+.service-card{
+  @apply w-full rounded p-6 border border-dotted border-soft_blue shadow hover:shadow-soft_blue;
+}
+
+.card-title{
+  @apply font-poppins font-bold text-soft_blue text-lg;
+}
+
+.card-intro{
+  @apply text-sm line-clamp-3 text-slate-600 my-4;
+}
+
+.card-button{
+  @apply text-sm px-4 py-1.5 rounded-full bg-soft_blue text-white border border-soft_blue hover:bg-transparent hover:text-soft_blue transition-all duration-100 ease-linear;
 }
