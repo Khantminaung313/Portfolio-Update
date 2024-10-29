@@ -1,7 +1,7 @@
 import About from "../sections/About";
 import Contact from "../sections/Contact";
 import Hero from "../sections/Hero";
-import Projects from "../sections/Projects";
+import Portfolio from "../sections/Portfolio";
 import Service from "../sections/Service";
 const LandingPage = () => {
       return (
@@ -9,7 +9,7 @@ const LandingPage = () => {
               <Hero />
               <About />
               <Service />
-              <Projects />
+              <Portfolio />
               <Contact />
           </div>
       );

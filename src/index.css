@@ -24,7 +24,25 @@ section{
 }
 
 .service-card{
-  @apply w-full rounded p-6 border border-dotted border-soft_blue shadow hover:shadow-soft_blue;
+  @apply w-full rounded p-6 border border-dotted border-soft_blue shadow hover:shadow-lg hover:shadow-soft_blue/70 bg-white translate-y-[100px] opacity-0 relative;
+}
+
+.service-card::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(2,0,36,0.47942927170868344) 0%, rgba(255,255,255,1) 50%, rgba(43,75,201,0.7035189075630253) 100%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scale(0);
+  transition: all 300ms linear;
+  transform-origin: bottom left;
+}
+
+.service-card:hover::before{
+  transform: scale(1);
 }
 
 .card-title{

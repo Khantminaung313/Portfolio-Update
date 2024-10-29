@@ -1,3 +1,6 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 import apiInterface from "../assets/svg/api-interface.svg";
 import frontend from "../assets/svg/frontend.svg";
 import hostingServer from "../assets/svg/hosting-server-web.svg";
@@ -5,7 +8,26 @@ import responsiveDesign from "../assets/svg/responsive-design.svg";
 import server from "../assets/svg/server.svg";
 import wordpress from "../assets/svg/wordpress.svg";
 
+gsap.registerPlugin(ScrollTrigger) 
+
 const Service = () => {
+	useEffect(() => {
+		gsap.to(
+			".service-card",
+			{
+				scrollTrigger: {
+					trigger: "#services",
+					toggleActions: "play none none none",
+					start: "top center",
+				},
+				duration: 0.3,
+				y: 0,
+				stagger: 0.1,
+				opacity: 1,
+			},
+		);
+	}, []);
+
 	return (
 		<section
 			id="services"
