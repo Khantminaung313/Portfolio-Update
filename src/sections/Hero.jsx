@@ -6,6 +6,7 @@ import wave3 from "../assets/wave3.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 const Hero = () => {
 	useEffect(() => {
 		const tl = gsap.timeline({
