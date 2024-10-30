@@ -45,6 +45,9 @@ const Service = () => {
 			<h1 className="text-center text-4xl font-anton tracking-wide py-8">
 				<span className="text-purple">My</span> Services
 			</h1>
+			<p className="text-slate-600 max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto text-center mb-8">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas incidunt error accusantium sit quae recusandae voluptatibus quas placeat maxime!
+			</p>
 
 			<div className="grid grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8">
 				{renderServices()}
