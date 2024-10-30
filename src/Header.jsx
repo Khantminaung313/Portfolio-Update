@@ -5,7 +5,7 @@ const Header = () => {
     <div className="fixed top-0 left-0 w-full py-4 z-50 mx-auto bg-gradient-to-t from-purple to-soft_blue">
         <div className="flex justify-between gap-4 items-center container mx-auto">
             <nav className="flex items-center gap-4 text-white [&_a]:cursor-pointer [&_a]:font-bold">
-                <a href="#hero" className="hover:underline">Home</a>
+                <a href="/" className="hover:underline">Home</a>
                 <a href="#about" className="hover:underline">About</a>
                 <a href="#services" className="hover:underline">Services</a>
                 <a href="#portfolio" className="hover:underline">Portfolio</a>

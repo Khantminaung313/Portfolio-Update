@@ -69,3 +69,16 @@ section{
 .card-button{
   @apply text-sm px-4 py-1.5 rounded-full bg-soft_blue text-white border border-soft_blue hover:bg-transparent hover:text-soft_blue transition-all duration-100 ease-linear;
 }
+
+/* Conact Form */
+#contact-form label{
+  @apply mb-2 block text-slate-600;
+}
+
+#contact-form input{
+  @apply w-full border border-soft_blue text-slate-700 accent-soft_blue px-3 py-2 rounded focus:outline-none;
+}
+
+#contact-form textarea{
+  @apply w-full border border-soft_blue text-slate-700 accent-soft_blue px-3 py-2 rounded focus:outline-none;
+}
