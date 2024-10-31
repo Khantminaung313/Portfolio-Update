@@ -1,4 +1,4 @@
-import dean from "../assets/dean.pdf";
+import dean from "../assets/Dean.pdf";
 import address from "../assets/svg/about_icons/address.svg";
 import calendar from "../assets/svg/about_icons/calendar-date.svg";
 import degree from "../assets/svg/about_icons/degree.svg";
