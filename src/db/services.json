@@ -4,41 +4,41 @@
         "title": "Frontend Development",
         "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
         "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "icon_path": "../../src/assets/svg/service_icons/frontend.svg"
+        "icon_path": "/assets/svg/service_icons/frontend.svg"
     },
     {
         "id": "2",
         "title": "Backend Development",
         "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
         "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "icon_path": "../../src/assets/svg/service_icons/backend.svg"
+        "icon_path": "/assets/svg/service_icons/backend.svg"
     },
     {
         "id": "3",
         "title": "Web Design",
         "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
         "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "icon_path": "../../src/assets/svg/service_icons/responsive-design.svg"
+        "icon_path": "/assets/svg/service_icons/responsive-design.svg"
     },
     {
         "id": "4",
         "title": "API Development",
         "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
         "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "icon_path": "../../src/assets/svg/service_icons/api-interface.svg"
+        "icon_path": "/assets/svg/service_icons/api-interface.svg"
     },
     {
         "id": "5",
         "title": "Website Hosting",
         "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
         "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "icon_path": "../../src/assets/svg/service_icons/hosting-server-web.svg"
+        "icon_path": "/assets/svg/service_icons/hosting-server-web.svg"
     },
     {
         "id": "6",
         "title": "Content Managment System (CMS)",
         "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
         "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "icon_path": "../../src/assets/svg/service_icons/wordpress.svg"
+        "icon_path": "/assets/svg/service_icons/wordpress.svg"
     }
 ]
