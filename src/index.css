@@ -76,9 +76,9 @@ section{
 }
 
 #contact-form input{
-  @apply w-full border border-soft_blue text-slate-700 accent-soft_blue px-3 py-2 rounded focus:outline-none;
+  @apply w-full text-sm border border-soft_blue text-slate-700 px-3 py-2 rounded focus:outline-none;
 }
 
 #contact-form textarea{
-  @apply w-full border border-soft_blue text-slate-700 accent-soft_blue px-3 py-2 rounded focus:outline-none;
+  @apply w-full text-sm border border-soft_blue text-slate-700 accent-soft_blue px-3 py-2 rounded focus:outline-none;
 }
