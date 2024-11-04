@@ -4,7 +4,7 @@ const Projects = () => {
 			id="projects"
 			className="panel w-screen min-h-screen relative bg-white"
 		>
-			<h1 className="text-center text-4xl font-anton tracking-wide py-8">
+			<h1 id="section-title" className="text-center text-4xl font-anton tracking-wide py-8">
 				<span className="text-purple">Demo </span>Projects
 			</h1>
 

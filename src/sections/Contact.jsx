@@ -60,13 +60,13 @@ const Contact = ({openPopup}) => {
 	};
 
 	return (
-		<section id="contact" className="relative min-h-screen">
+		<section id="contact" className="relative py-8 lg:min-h-screen">
 			<div>
-				<h1 className="text-center text-4xl font-anton tracking-wide py-8">
+				<h1 id="section-title" className="text-center text-4xl font-anton tracking-wide py-8">
 					Contact <span className="text-purple">Me</span>
 				</h1>
 				<p className="text-slate-600 max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto text-center mb-8">
-					If you have any question? feel free to ask me by
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit minus architecto facere ea aut. Labore doloremque architecto veniam maxime repellat.
 				</p>
 			</div>
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
@@ -80,7 +80,7 @@ const Contact = ({openPopup}) => {
 					</div>
 				</div>
 				<div>
-					<div className="w-[90%] me-auto sm:max-w-[500px] shadow-lg border p-6 rounded">
+					<div className="w-[90%] mx-auto lg:me-auto sm:max-w-[500px] shadow-lg border p-6 rounded">
 						<h3 className="text-2xl mb-4 font-bold text-soft_blue text-center">
 							Get in Touch
 						</h3>

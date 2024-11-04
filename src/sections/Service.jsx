@@ -1,28 +1,12 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import ServiceCard from "../components/ServiceCard";
 import services from "../db/services.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Service = () => {
-	const renderServices = () => {
-		return services.map((service) => (
-			<div className="service-card" key={service.id}>
-				<div className="mb-6 flex justify-center">
-					<img
-						className="size-20"
-						src={service.icon_path}
-						alt="icon"
-					/>
-				</div>
-				<h3 className="card-title">{service.title}</h3>
-				<p className="card-intro">{service.intro}</p>
-				<button className="card-button">See More</button>
-			</div>
-		));
-	};
-
 	useEffect(() => {
 		gsap.to(".service-card", {
 			scrollTrigger: {
@@ -30,9 +14,9 @@ const Service = () => {
 				toggleActions: "play none none none",
 				start: "top center",
 			},
-			duration: 0.3,
+			duration: 0.5,
 			y: 0,
-			stagger: 0.1,
+			stagger: 0.2,
 			opacity: 1,
 		});
 	}, []);
@@ -42,15 +26,19 @@ const Service = () => {
 			id="services"
 			className="panel w-screen min-h-screen relative bg-white"
 		>
-			<h1 className="text-center text-4xl font-anton tracking-wide py-8">
+			<h1 id="section-title" className="text-center text-4xl font-anton tracking-wide py-8">
 				<span className="text-purple">My</span> Services
 			</h1>
 			<p className="text-slate-600 max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto text-center mb-8">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas incidunt error accusantium sit quae recusandae voluptatibus quas placeat maxime!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+				voluptas incidunt error accusantium sit quae recusandae
+				voluptatibus quas placeat maxime!
 			</p>
 
-			<div className="grid grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8">
-				{renderServices()}
+			<div className="grid grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8 pb-6">
+				{services.map((service) => (
+					<ServiceCard key={service.id} service={service} />
+				))}
 			</div>
 		</section>
 	);

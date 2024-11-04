@@ -1,11 +1,10 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
-import dean from "../assets/Dean.jfif";
-import wave3 from "../assets/wave3.png";
+import dean from "../assets/images/Dean.jfif";
+import wave3 from "../assets/images/wave3.png";
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 const Hero = () => {
 	useEffect(() => {

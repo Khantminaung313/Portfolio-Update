@@ -13,11 +13,11 @@ const About = () => {
 	return (
 		<section
 			id="about"
-			className="panel w-screen min-h-screen relative flex items-center justify-center"
+			className="panel w-screen lg:min-h-screen relative flex items-center justify-center"
 		>
-			<div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
-				<div className="hidden md:flex items-start justify-center">
-					<div id="about-image-wrapper" className="aspect-[5/7] max-w-[300px] relative">
+			<div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4">
+				<div className="hidden lg:flex items-start justify-center">
+					<div id="about-image-wrapper" className="aspect-[5/7] lg:max-w-[250px] xl:max-w-[300px] relative">
 						<div className="overflow-hidden h-full w-full shadow">
 							<img
 								className="w-full h-full object-cover object-center"
@@ -28,7 +28,7 @@ const About = () => {
 					</div>
 				</div>
 
-				<div className="w-full h-full col-span-2">
+				<div className="w-full h-full col-span-2 py-8 lg:py-0">
 					<div className="mb-8">
 						<p className="text-sm text-slate-600">
 							Hello, thank you for visiting. I&apos;m
@@ -36,7 +36,7 @@ const About = () => {
 						<h3 className="text-soft_blue text-2xl lg:text-4xl font-bold mb-4">
 							DEAN
 						</h3>
-						<p className="text-justify w-full tracking-wide leading-8">
+						<p className="text-justify w-full tracking-wide leading-6 sm:leading-8">
 							A full-stack web developer with experience as a web
 							developer. In this role, I gained valuable insights
 							into business logic and essential workflow

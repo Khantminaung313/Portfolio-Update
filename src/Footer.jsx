@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <div className='w-full py-4 text-center bg-soft_blue text-white'>All rights reserved. Copyright 2024 by <a href="/">Khant Min Aung</a>.</div>
+    <div className='w-full text-sm sm:text-base py-4 text-center bg-gradient-to-r from-sky-500 to-indigo-500 text-white'>Copyright &#169; 2024 Khant Min Aung. All rights reserved.</div>
   )
 }
 
