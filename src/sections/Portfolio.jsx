@@ -46,7 +46,7 @@ const Portfolio = () => {
 	return (
 		<section
 			id="portfolio"
-			className="panel w-screen lg:min-h-screen relative bg-white py-8"
+			className="panel w-screen lg:min-h-screen relative bg-white pb-8"
 		>
 			<h1
 				id="section-title"

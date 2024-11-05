@@ -1,7 +1,9 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import { ReactTyped } from "react-typed";
 import dean from "../assets/images/Dean.jfif";
+import ButtonDefault from "../components/ButtonDefault";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,10 +40,27 @@ const Hero = () => {
 					>
 						<img className="w-full h-full" src={dean} alt="" />
 					</div>
-					<h1 className="title text-white py-4 text-center text-2xl xl:text-3xl font-bebas-neue mb-4">
-						I&apos;m Dean <br /> A fullstack developer
+					<h1 className="title text-white py-4 text-center text-2xl xl:text-3xl font-bebas-neue">
+						I&apos;m Dean
 					</h1>
-					<a className="px-6 py-2 text-white font-bold bg-slate-500 border hover:bg-soft_blue rounded-full animate-bounce" href="#about">About Me</a>
+					<ReactTyped
+						strings={[
+							"A Fullstack Developer",
+							"A Frontend Developer",
+							"A Backend Developer",
+							"A Web Developer"
+						]}
+						typeSpeed={50}
+						backSpeed={30}
+						startDelay={1}
+						loop
+						className="title text-white text-center text-2xl xl:text-3xl font-bebas-neue mb-4"
+					/>
+					<ButtonDefault
+						link={"#about"}
+						text={"About Me"}
+						attr={""}
+					/>
 				</div>
 			</div>
 		</>

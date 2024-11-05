@@ -10,7 +10,7 @@ const CommingSoon = () => {
 				loop={true}
 			/>
 
-			<p className="text-center text-slate-500 text-xs font-bold">
+			<p className="text-center text-slate-500 text-xs font-semibold leading-6">
 				If you have any suggestion, <br /> I&apos;m{" "}
 				<a href="/#contact" className="underline text-soft_blue">
 					here
