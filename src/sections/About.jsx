@@ -13,11 +13,11 @@ const About = () => {
 	return (
 		<section
 			id="about"
-			className="panel w-screen lg:min-h-screen relative flex items-center justify-center"
+			className="panel w-screen lg:min-h-screen relative flex items-center justify-center bg-white"
 		>
 			<div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4">
 				<div className="hidden lg:flex items-start justify-center">
-					<div id="about-image-wrapper" className="aspect-[5/7] lg:max-w-[250px] xl:max-w-[300px] relative">
+					<div id="about-image-wrapper" className="aspect-[5/7] lg:max-w-[250px] xl:max-w-[300px] relative z-0">
 						<div className="overflow-hidden h-full w-full shadow">
 							<img
 								className="w-full h-full object-cover object-center"
@@ -146,7 +146,7 @@ const About = () => {
 					<div className="mt-20">
 						<button>
 							<a
-								className="px-8 py-2 bg-soft_blue text-white rounded"
+								className="px-8 py-2 bg-slate-500 text-white rounded hover:bg-soft_blue transition-all duration-100 ease-linear"
 								href={dean}
 							>
 								DownLoad CV

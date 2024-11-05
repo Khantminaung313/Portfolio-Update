@@ -52,6 +52,11 @@ section{
   z-index: -1;
 }
 
+#ts-particles{
+  position: absolute;
+  z-index: -2;
+}
+
 
 .card-title{
   @apply font-poppins font-bold text-soft_blue text-sm sm:text-base lg:text-lg line-clamp-2 flex-grow;

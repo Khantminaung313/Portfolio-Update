@@ -11,7 +11,7 @@ const Header = () => {
                 <a href="#portfolio" className="hover:underline">Portfolio</a>
                 <a href="#contact" className="hover:underline">Contact</a>
             </nav>
-            <a href={dean} className="px-8 py-2 bg-soft_blue text-white text-sm cursor-pointer rounded-full border hover:bg-tint_blue transition-all duration-150" download>Download CV</a>
+            <a href={dean} className="px-8 py-2 bg-slate-500 text-white text-sm cursor-pointer rounded-full border hover:bg-soft_blue transition-all duration-150" download>Download CV</a>
         </div>
     </div>
   )

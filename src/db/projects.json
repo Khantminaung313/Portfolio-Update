@@ -10,7 +10,7 @@
     {
         "id": 2,
         "title": "MTKN Cambodia",
-        "category": "[3, 2]",
+        "category": "[ 2, 1]",
         "intro": "MTKN Cambodia is a product display and inquiry website. [wordpress custom theme]",
         "thumbnail": "/assets/images/project-images/mtkn-kh.png",
         "url": "https://kh.mtknthailand.com/"
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "title": "U digital Agency",
-        "category": "[3, 2]",
+        "category": "[ 2, 1]",
         "intro": "U digital Agency is a CMS (Content Managment System) Website. [wordpress custom theme]",
         "thumbnail": "/assets/images/project-images/uda.png",
         "url": "https://uda.mtknthailand.com/"

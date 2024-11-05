@@ -1,6 +1,7 @@
 import Lottie from "lottie-react";
 import { useState } from "react";
 import thankyou from "../assets/thank-you.json";
+import ParticleComponent from "../components/ParticleComponent";
 import About from "../sections/About";
 import Contact from "../sections/Contact";
 import Hero from "../sections/Hero";
@@ -33,6 +34,7 @@ const LandingPage = () => {
                     <button onClick={closePopup} className="absolute -top-3 -right-2 content-center px-4 py-2 shadow bg-white text-red-700 rounded-full border">x</button>
                 </div>
             </div>
+                <ParticleComponent />
               <Hero />
               <About />
               <Service />

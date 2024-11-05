@@ -60,7 +60,7 @@ const Contact = ({openPopup}) => {
 	};
 
 	return (
-		<section id="contact" className="relative py-8 lg:min-h-screen">
+		<section id="contact" className="relative py-8 lg:min-h-screen bg-white">
 			<div>
 				<h1 id="section-title" className="text-center text-4xl font-anton tracking-wide py-8">
 					Contact <span className="text-purple">Me</span>
