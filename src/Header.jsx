@@ -1,20 +1,168 @@
+import { useEffect, useRef, useState } from "react";
 import dean from "./assets/Dean.pdf";
 
 const Header = () => {
-  return (
-    <div className="fixed top-0 left-0 w-full py-4 z-50 mx-auto bg-gradient-to-r from-sky-500 to-indigo-500 shadow-md shadow-gray-600">
-        <div className="flex justify-between gap-4 items-center container mx-auto">
-            <nav className="flex items-center gap-4 text-white [&_a]:cursor-pointer [&_a]:font-bold">
-                <a href="#" className="hover:underline">Home</a>
-                <a href="#about" className="hover:underline">About</a>
-                <a href="#services" className="hover:underline">Services</a>
-                <a href="#portfolio" className="hover:underline">Portfolio</a>
-                <a href="#contact" className="hover:underline">Contact</a>
-            </nav>
-            <a href={dean} className="px-8 py-2 bg-slate-500 text-white text-sm cursor-pointer rounded-full border hover:bg-soft_blue transition-all duration-150" download>Download CV</a>
-        </div>
-    </div>
-  )
-}
+  const [menu, setMenu] = useState(false);
+  const menuRef = useRef(null);
 
-export default Header
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
+
+  const closeMenu = () => {
+    setMenu(false);
+  };
+
+  useEffect(() => {
+    const updateClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenu(false);
+      }
+    };
+
+    window.addEventListener("mousedown", updateClickOutside);
+
+    return () => {
+      window.removeEventListener("mousedown", updateClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setMenu(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
+  return (
+    <>
+      <div className="fixed hidden lg:block top-0 left-0 w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-4 z-40 mx-auto rounded bg-gradient-to-br from-sky-500 via-slate-300 to-indigo-500 from-0% via-50% to-100% shadow-md shadow-gray-600">
+        <div className="flex justify-between gap-4 items-center container mx-auto">
+          <nav className="flex items-center gap-4 text-white [&_a]:cursor-pointer [&_a]:font-bold">
+            <a href="#" className="hover:underline">
+              Home
+            </a>
+            <a href="#about" className="hover:underline">
+              About
+            </a>
+            <a href="#services" className="hover:underline">
+              Services
+            </a>
+            <a href="#portfolio" className="hover:underline">
+              Portfolio
+            </a>
+            <a href="#contact" className="hover:underline">
+              Contact
+            </a>
+          </nav>
+          <a
+            href={dean}
+            className="px-8 py-2 bg-slate-500 text-white text-sm cursor-pointer rounded-full border hover:bg-soft_blue transition-all duration-150"
+            download
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        ref={menuRef}
+        className={`fixed w-full h-auto left-0 top-0 z-40 bg-soft_blue rounded-br rounded-bl lg:hidden shadow-lg text-white overflow-hidden transition-all duration-300 ease-linear origin-top ${
+          menu ? "scale-y-100" : "scale-y-0"
+        }`}
+      >
+        <ul className="pt-16 pb-2 text-center divide-y divide-slate-200">
+          <li className="mobile-menu-item ">
+            <a onClick={() => closeMenu()} href="#">
+              Home
+            </a>
+          </li>
+          <li className="mobile-menu-item ">
+            <a onClick={() => closeMenu()} href="#about">
+              About
+            </a>
+          </li>
+          <li className="mobile-menu-item ">
+            <a onClick={() => closeMenu()} href="#services">
+              Services
+            </a>
+          </li>
+          <li className="mobile-menu-item ">
+            <a onClick={() => closeMenu()} href="#portfolio">
+              Portfolio
+            </a>
+          </li>
+          <li className="mobile-menu-item ">
+            <a onClick={() => closeMenu()} href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Toggle Button */}
+      <button
+        className="p-1.5 lg:hidden bg-soft_blue rounded fixed border right-4 top-4 inline-block text-white z-40 shadow"
+        onClick={() => handleMenu()}
+      >
+        {menu ? (
+          <svg
+            className="size-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              {" "}
+              <path
+                d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
+                fill="#ffffff"
+              ></path>{" "}
+            </g>
+          </svg>
+        ) : (
+          <svg
+            className="size-6"
+            fill="#ffffff"
+            height="200px"
+            width="200px"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1792 1792"
+            xmlSpace="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              {" "}
+              <title>fiction</title>{" "}
+              <path d="M1673.9,1363.2L1673.9,1363.2c0,52.3-42.4,94.3-94.3,94.3H212.7c-52.3,0-94.3-42.4-94.3-94.3l0,0 c0-52.3,42.4-94.3,94.3-94.3h1366.8C1631.5,1268.5,1673.9,1310.9,1673.9,1363.2z"></path>{" "}
+              <path d="M1673.9,895.6L1673.9,895.6c0,52.3-42.4,94.3-94.3,94.3H213c-52.3,0-94.3-42.4-94.3-94.3l0,0c0-52.3,42.4-94.3,94.3-94.3 h1366.6C1631.5,800.8,1673.9,843.2,1673.9,895.6z"></path>{" "}
+              <path d="M1673.9,427.9L1673.9,427.9c0,52.3-42.4,94.3-94.3,94.3H212.7c-52.3,0-94.3-42.4-94.3-94.3l0,0c0-52.3,42.4-94.3,94.3-94.3 h1366.8C1631.5,333.2,1673.9,375.6,1673.9,427.9z"></path>{" "}
+            </g>
+          </svg>
+        )}
+      </button>
+    </>
+  );
+};
+
+export default Header;

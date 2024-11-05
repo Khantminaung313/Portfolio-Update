@@ -113,3 +113,12 @@ section{
 #contact-form textarea{
   @apply w-full text-sm border border-soft_blue text-slate-700 accent-soft_blue px-3 py-2 rounded focus:outline-none;
 }
+
+/* Mobile Menu */
+.mobile-menu-item{
+  @apply py-2 hover:bg-slate-300 hover:text-soft_blue transition-all duration-300 ease-linear;
+}
+
+.mobile-menu-item a{
+  @apply cursor-pointer block;
+}
