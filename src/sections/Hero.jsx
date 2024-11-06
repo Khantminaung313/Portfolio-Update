@@ -35,7 +35,7 @@ const Hero = () => {
 				<div className="w-[500px] flex flex-col items-center justify-center">
 					<div
 						id="profile"
-						className="profile rounded-full size-[200px] overflow-hidden border-4 border-purple mx-auto"
+						className="profile rounded-full size-[200px] overflow-hidden border-[5px] border-purple mx-auto shadow shadow-slate-200"
 					>
 						<img className="w-full h-full" src={dean} alt="" />
 					</div>

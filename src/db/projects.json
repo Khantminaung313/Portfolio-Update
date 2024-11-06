@@ -3,23 +3,26 @@
         "id": 1,
         "title": "MTKN Myanmar",
         "category": "[1, 2]",
-        "intro": "MTKN Myanmar is a product showcase and inquiry website by using TALL stack. [Tailwind + AlpineJS + Livewire + Laravel]",
+        "first_desc": "MTKN Myanmar is a product showcase and inquiry website by using TALL stack. [Tailwind + AlpineJS + Livewire + Laravel]",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, \n voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/mtkn-mm.png",
         "url": "https://mtknmyanmar.com.mm/"
     },
     {
         "id": 2,
         "title": "MTKN Cambodia",
-        "category": "[ 2, 1]",
-        "intro": "MTKN Cambodia is a product display and inquiry website. [wordpress custom theme]",
+        "category": "[ 2, 1, 3]",
+        "first_desc": "MTKN Cambodia is a product display and inquiry website. [wordpress custom theme]",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/mtkn-kh.png",
         "url": "https://kh.mtknthailand.com/"
     },
     {
         "id": 3,
         "title": "U digital Agency",
-        "category": "[ 2, 1]",
-        "intro": "U digital Agency is a CMS (Content Managment System) Website. [wordpress custom theme]",
+        "category": "[ 2, 1, 3]",
+        "first_desc": "U digital Agency is a CMS (Content Managment System) Website. [wordpress custom theme]",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/uda.png",
         "url": "https://uda.mtknthailand.com/"
     },
@@ -27,7 +30,8 @@
         "id": 4,
         "title": "Connect-4",
         "category": "[2, 4]",
-        "intro": "Connect-4 is clone of connect-4 game and include computer player. [ReactJS]",
+        "first_desc": "Connect-4 is clone of connect-4 game and include computer player. [ReactJS]",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/connect-4.png",
         "url": "https://connect-4-clone-theta.vercel.app"
     },
@@ -35,31 +39,35 @@
         "id": 5,
         "title": "Travel and Tour Template",
         "category": "[2]",
-        "intro": "T&T template is a responsive travel and Tour website design template. [HTML, CSS, Javscript]",
+        "first_desc": "T&T template is a responsive travel and Tour website design template. [HTML, CSS, Javscript]",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/travel&tour.png",
         "url": "https://mellow-concha-d29f0b.netlify.app"
     },
     {
         "id": 6,
-        "title": "Portfolio template",
+        "title": "Portfolio Template",
         "category": "[2]",
-        "intro": "It is a responsive portfolio template design. [HTML, CSS, Javscript]",
+        "first_desc": "It is a responsive portfolio template design. [HTML, CSS, Javscript]",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/portfolio.png",
         "url": "https://velvety-entremet-93c41b.netlify.app"
     },
     {
         "id": 7,
-        "title": "Skater blog template",
+        "title": "Skater Blog Template",
         "category": "[2]",
-        "intro": "It is a resposive skater blog template design. [HTML, CSS, Javascript]",
+        "first_desc": "It is a resposive skater blog template design. [HTML, CSS, Javascript]",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/skater.png",
         "url": "https://genuine-mermaid-c429a0.netlify.app"
     },
     {
         "id": 8,
-        "title": "Click a dot animation",
+        "title": "Click a Dot Animation",
         "category": "[4]",
-        "intro": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "first_desc": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/dot-animation.png",
         "url": "https://cool-cucurucho-00b5a0.netlify.app"
     },
@@ -67,7 +75,8 @@
         "id": 9,
         "title": "Quiz App",
         "category": "[4]",
-        "intro": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "first_desc": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/quiz-app.png",
         "url": "https://iridescent-speculoos-8c7a37.netlify.app"
     },
@@ -75,7 +84,8 @@
         "id": 10,
         "title": "Dynamic Form Fields",
         "category": "[4]",
-        "intro": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "first_desc": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/dynamic-form.png",
         "url": "https://lambent-dragon-73b9c9.netlify.app"
     },
@@ -83,7 +93,8 @@
         "id": 11,
         "title": "Digital Clock",
         "category": "[4]",
-        "intro": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "first_desc": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/digital-clock.png",
         "url": "https://radiant-starlight-f75240.netlify.app"
     },
@@ -91,7 +102,8 @@
         "id": 12,
         "title": "New Year Countdown",
         "category": "[4]",
-        "intro": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "first_desc": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/countdown.png",
         "url": "https://zingy-vacherin-a6560c.netlify.app"
     },
@@ -99,7 +111,8 @@
         "id": 13,
         "title": "Unit Converter",
         "category": "[4]",
-        "intro": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "first_desc": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/converter.png",
         "url": "https://splendorous-pudding-beb434.netlify.app"
     },
@@ -107,15 +120,17 @@
         "id": 14,
         "title": "Simple Clock",
         "category": "[4]",
-        "intro": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "first_desc": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/simple-clock.png",
         "url": "https://darling-trifle-152b91.netlify.app"
     },
     {
         "id": 15,
-        "title": "Random color generator",
+        "title": "Random Color Generator",
         "category": "[4]",
-        "intro": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "first_desc": "It is a mini-javascript project. I created this mini project to understand foundation of how javascript",
+        "second_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit repellendus sit deserunt soluta, voluptatem eligendi omnis consequuntur vitae numquam quod quos eos provident in quam expedita itaque vel nam sapiente eveniet! Numquam repudiandae unde iusto placeat amet dolorem minus?",
         "thumbnail": "/assets/images/project-images/color-generator.png",
         "url": "https://sensational-empanada-7ddf77.netlify.app"
     }   

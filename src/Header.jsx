@@ -6,6 +6,31 @@ const Header = () => {
 	const menuRef = useRef(null);
 	const navRef = useRef(null);
 
+  const [activeLink, setActiveLink] = useState('#');
+
+  const handleScroll = () => {
+    const sections = [
+      { id: '#', offsetTop: 0 },
+      { id: '#about', offsetTop: document.getElementById('about').offsetTop },
+      { id: '#services', offsetTop: document.getElementById('services').offsetTop },
+      { id: '#portfolio', offsetTop: document.getElementById('portfolio').offsetTop },
+      { id: '#contact', offsetTop: document.getElementById('contact').offsetTop },
+    ];
+
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+    const currentSection = sections.reduce((current, section) => {
+      return scrollPosition >= section.offsetTop ? section : current;
+    }, sections[0]);
+
+    setActiveLink(currentSection.id);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
 	const showMenu = () => {
 		setMenu(true);
 	};
@@ -67,23 +92,23 @@ const Header = () => {
 				ref={navRef}
         id="navbar"
 				className="
-        fixed hidden w-[98%] lg:block top-4 left-1/2 -translate-x-1/2 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28 lg:py-2 xl:py-4 z-40 rounded bg-gradient-to-t from-soft_blue to-white from-10% to-10% shadow-lg shadow-slate-300 transition-all duration-150 ease-linear"
+        fixed hidden w-[98%] lg:block top-4 left-1/2 -translate-x-1/2 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28 lg:py-2 xl:py-4 z-40 rounded bg-gradient-to-t from-soft_blue to-white from-10% to-10% shadow-lg shadow-slate-300 transition-all duration-300 ease-in"
 			>
 				<div className="flex justify-between gap-4 items-center container mx-auto">
 					<nav className="flex items-center gap-4 text-soft_blue [&_a]:cursor-pointer [&_a]:font-bold">
-						<a href="#" className="hover:border-b-2 border-soft_blue">
+						<a href="#" className={`${activeLink === '#' ? 'border-b-2 border-soft_blue' : ''} hover:border-b-2 border-soft_blue`}>
 							Home
 						</a>
-						<a href="#about" className="hover:border-b-2 border-soft_blue">
+						<a href="#about" className={`${activeLink === '#about' ? 'border-b-2 border-soft_blue' : ''} hover:border-b-2 border-soft_blue`}>
 							About
 						</a>
-						<a href="#services" className="hover:border-b-2 border-soft_blue">
+						<a href="#services" className={`${activeLink === '#services' ? 'border-b-2 border-soft_blue' : ''} hover:border-b-2 border-soft_blue`}>
 							Services
 						</a>
-						<a href="#portfolio" className="hover:border-b-2 border-soft_blue">
+						<a href="#portfolio" className={`${activeLink === '#portfolio' ? 'border-b-2 border-soft_blue' : ''} hover:border-b-2 border-soft_blue`}>
 							Portfolio
 						</a>
-						<a href="#contact" className="hover:border-b-2 border-soft_blue">
+						<a href="#contact" className={`${activeLink === '#contact' ? 'border-b-2 border-soft_blue' : ''} hover:border-b-2 border-soft_blue`}>
 							Contact
 						</a>
 					</nav>
@@ -105,27 +130,27 @@ const Header = () => {
 				}`}
 			>
 				<ul className="pt-16 pb-2 text-center divide-y divide-slate-200">
-					<li className="mobile-menu-item ">
+					<li className={`mobile-menu-item ${activeLink === '#' ? 'bg-slate-300' : ''}`}>
 						<a onClick={() => closeMenu()} href="#">
 							Home
 						</a>
 					</li>
-					<li className="mobile-menu-item ">
+					<li className={`mobile-menu-item ${activeLink === '#about' ? 'bg-slate-300' : ''}`}>
 						<a onClick={() => closeMenu()} href="#about">
 							About
 						</a>
 					</li>
-					<li className="mobile-menu-item ">
+					<li className={`mobile-menu-item ${activeLink === '#services' ? 'bg-slate-300' : ''}`}>
 						<a onClick={() => closeMenu()} href="#services">
 							Services
 						</a>
 					</li>
-					<li className="mobile-menu-item ">
+					<li className={`mobile-menu-item ${activeLink === '#portfolio' ? 'bg-slate-300' : ''}`}>
 						<a onClick={() => closeMenu()} href="#portfolio">
 							Portfolio
 						</a>
 					</li>
-					<li className="mobile-menu-item ">
+					<li className={`mobile-menu-item ${activeLink === '#contact' ? 'bg-slate-300' : ''}`}>
 						<a onClick={() => closeMenu()} href="#contact">
 							Contact
 						</a>
