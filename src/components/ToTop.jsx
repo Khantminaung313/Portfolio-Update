@@ -26,9 +26,9 @@ const ToTop = () => {
       {showTopButton && (
         <button
           onClick={() => scrollToTop()}
-          className="fixed bottom-4 right-4 p-3 rounded-full bg-soft_blue text-white shadow-lg z-30 text-xs"
+          className="fixed bottom-8 right-4 p-3 rounded-full bg-soft_blue text-white shadow-lg shadow-slate-600 z-30 text-xs"
         >
-          &#8593;Top
+          &#8593; Top
         </button>
       )}
     </>

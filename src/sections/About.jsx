@@ -7,13 +7,14 @@ import language from "../assets/svg/about_icons/language.svg";
 import linkedin from "../assets/svg/about_icons/linkedin.svg";
 import mail from "../assets/svg/about_icons/mail.svg";
 import phone from "../assets/svg/about_icons/phone.svg";
+import ButtonDefault from "../components/ButtonDefault";
 import aboutImage from "/src/assets/about-image.jpg";
 
 const About = () => {
 	return (
 		<section
 			id="about"
-			className="panel w-screen lg:min-h-screen relative flex items-center justify-center bg-white"
+			className="panel w-screen lg:min-h-screen relative flex items-center justify-center bg-white py-8 lg:py-0"
 		>
 			<div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4">
 				<div className="hidden lg:flex items-start justify-center">
@@ -36,7 +37,7 @@ const About = () => {
 						<h3 className="text-soft_blue text-2xl lg:text-4xl font-bold mb-4">
 							DEAN
 						</h3>
-						<p className="text-justify w-full tracking-wide leading-6 sm:leading-8">
+						<p className="text-justify w-full tracking-wide leading-6 sm:leading-8 text-sm lg:text-base">
 							A full-stack web developer with experience as a web
 							developer. In this role, I gained valuable insights
 							into business logic and essential workflow
@@ -143,15 +144,8 @@ const About = () => {
 							</li>
 						</ul>
 					</div>
-					<div className="mt-20">
-						<button>
-							<a
-								className="px-8 py-2 bg-slate-500 text-white rounded hover:bg-soft_blue transition-all duration-100 ease-linear"
-								href={dean}
-							>
-								DownLoad CV
-							</a>
-						</button>
+					<div className="mt-10 lg:mt-20">
+						<ButtonDefault link={dean} text={"Download CV"} attr={{ download: "resume@dean" }} />
 					</div>
 				</div>
 			</div>

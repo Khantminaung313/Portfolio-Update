@@ -60,12 +60,12 @@ const Contact = ({openPopup}) => {
 	};
 
 	return (
-		<section id="contact" className="relative lg:min-h-screen bg-white pb-8">
+		<section id="contact" className="relative lg:min-h-screen bg-white py-8">
 			<div>
-				<h1 id="section-title" className="text-center text-4xl font-anton tracking-wide py-8">
-					Contact <span className="text-purple">Me</span>
+				<h1 id="section-title" className="section-title">
+					Contact <span>Me</span>
 				</h1>
-				<p className="text-slate-600 max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto text-center mb-8">
+				<p className="intro">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit minus architecto facere ea aut. Labore doloremque architecto veniam maxime repellat.
 				</p>
 			</div>
@@ -81,7 +81,7 @@ const Contact = ({openPopup}) => {
 				</div>
 				<div>
 					<div className="w-[90%] mx-auto lg:me-auto sm:max-w-[500px] shadow-lg border p-6 rounded">
-						<h3 className="text-2xl mb-4 font-bold text-soft_blue text-center">
+						<h3 className="text-xl lg:text-2xl mb-4 font-bold text-soft_blue text-center">
 							Get in Touch
 						</h3>
 						<form ref={form} id="contact-form" onSubmit={sendEmail}>
@@ -135,7 +135,7 @@ const Contact = ({openPopup}) => {
 
 							<button
 							type="submit"
-							className="flex items-center justify-center gap-2 px-4 py-1.5 rounded-sm bg-soft_blue text-white hover:bg-blue-500 transition-all duration-150 ease-linear"
+							className="flex items-center justify-center gap-2 px-3 lg:px-4 py-1 lg:py-1.5 rounded-sm bg-soft_blue text-white hover:bg-blue-500 transition-all duration-150 ease-linear"
 							disabled={isLoading}
 						>
 							{isLoading ? (

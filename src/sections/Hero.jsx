@@ -3,7 +3,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import { ReactTyped } from "react-typed";
 import dean from "../assets/images/Dean.jfif";
-import ButtonDefault from "../components/ButtonDefault";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,7 +39,7 @@ const Hero = () => {
 					>
 						<img className="w-full h-full" src={dean} alt="" />
 					</div>
-					<h1 className="title text-white py-4 text-center text-2xl xl:text-3xl font-bebas-neue">
+					<h1 className="title py-4 text-center text-2xl xl:text-3xl font-bebas-neue text-white">
 						I&apos;m Dean
 					</h1>
 					<ReactTyped
@@ -54,13 +53,13 @@ const Hero = () => {
 						backSpeed={30}
 						startDelay={1}
 						loop
-						className="title text-white text-center text-2xl xl:text-3xl font-bebas-neue mb-4"
+						className="title text-center text-2xl xl:text-3xl font-bebas-neue mb-6 text-white"
 					/>
-					<ButtonDefault
-						link={"#about"}
-						text={"About Me"}
-						attr={""}
-					/>
+					<div className="absolute bottom-8 left-0 w-full z-30 text-center animate-bounce">
+						<a href="#about" className="bg-clip-text text-transparent bg-gradient-to-b from-purple to-soft_blue font-extrabold text-4xl" title="About Me">
+							&#x2B9F;
+						</a>
+					</div>
 				</div>
 			</div>
 		</>

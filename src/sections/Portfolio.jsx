@@ -46,15 +46,14 @@ const Portfolio = () => {
 	return (
 		<section
 			id="portfolio"
-			className="panel w-screen lg:min-h-screen relative bg-white pb-8"
+			className="panel w-screen lg:min-h-screen relative bg-white py-8"
 		>
 			<h1
-				id="section-title"
-				className="text-center text-4xl font-anton tracking-wide py-8"
+				className="section-title"
 			>
-				<span className="text-purple">My </span> Portfolio
+				<span>My </span> Portfolio
 			</h1>
-			<p className="text-slate-600 max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto text-center mb-8">
+			<p className="intro">
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
 				minus architecto facere ea aut. Labore doloremque architecto
 				veniam maxime repellat.

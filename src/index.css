@@ -19,9 +19,32 @@ body{
   overflow-x: hidden;
 }
 
-section{
-  @apply w-full pt-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28;
+#navbar{
+  clip-path: polygon(0% 0%, 100% 0%, 99.5% 100%, 0.5% 100%);
 }
+
+.full-width-nav{
+  width: 100% !important;
+  top: 0% !important;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important;
+}
+
+section{
+  @apply w-full lg:pt-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28;
+}
+
+section .section-title{
+  @apply text-center text-3xl lg:text-4xl font-anton tracking-wide py-8;
+}
+
+section .section-title span{
+  @apply text-purple;
+}
+
+section .intro{
+  @apply text-slate-600 max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto text-center mb-8 text-sm lg:text-base;
+}
+
 
 .service-card{
   @apply w-full flex flex-col rounded p-2 sm:p-4 lg:p-6 border border-dotted border-soft_blue shadow hover:shadow-lg hover:shadow-soft_blue/70 bg-white translate-y-[100px] opacity-0 relative;
@@ -67,11 +90,11 @@ section{
 }
 
 .card-button{
-  @apply text-sm w-[50px] sm:w-[100px] h-[17px] sm:h-[35px] text-[8px] rounded-full bg-soft_blue text-white border border-soft_blue transition-all duration-100 ease-linear inline-block overflow-hidden relative z-10;
+  @apply w-[100px] h-[24px] sm:h-[35px] rounded-full bg-slate-500 text-white transition-all duration-100 ease-linear inline-block overflow-hidden relative z-10;
 }
 
 .card-button span{
-  @apply absolute top-0 left-0 w-full h-full text-center text-[8px] sm:text-base leading-4 sm:leading-8;
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full text-center text-[10px] sm:text-base leading-6 sm:leading-8;
 }
 
 .card-button::after,.card-button::before{
@@ -79,7 +102,7 @@ section{
   position: absolute;
   width: 0%;
   height: 100%;
-  background: #355ef2;
+  background: #1288c3;
   z-index: -1;
   top: 0;
   transition: all 300ms ease-in-out;
@@ -103,7 +126,7 @@ section{
 
 /* Conact Form */
 #contact-form label{
-  @apply mb-2 block text-slate-600;
+  @apply mb-2 block text-slate-600 text-sm lg:text-base;
 }
 
 #contact-form input{

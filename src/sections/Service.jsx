@@ -24,12 +24,12 @@ const Service = () => {
 	return (
 		<section
 			id="services"
-			className="panel w-screen min-h-screen relative bg-white"
+			className="panel w-screen min-h-screen relative bg-white py-8"
 		>
-			<h1 id="section-title" className="text-center text-4xl font-anton tracking-wide py-8">
-				<span className="text-purple">My</span> Services
+			<h1 className="section-title">
+				<span>My</span> Services
 			</h1>
-			<p className="text-slate-600 max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto text-center mb-8">
+			<p className="intro">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
 				voluptas incidunt error accusantium sit quae recusandae
 				voluptatibus quas placeat maxime!
