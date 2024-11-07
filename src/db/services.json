@@ -2,43 +2,43 @@
     {
         "id": "1",
         "title": "Frontend Development",
-        "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
+        "intro": "I craft responsive, user-friendly websites and web applications using the latest frontend technologies, including HTML, CSS, JavaScript, React, and more.",
+        "content": "With over a year of experience in frontend development, I bring your design ideas to life with clean, efficient, and interactive code. My skill set includes a broad range of technologies—HTML, CSS, JavaScript, jQuery, AJAX, TailwindCSS, Bootstrap, SASS, React, Redux, and more—allowing me to create responsive and engaging interfaces that enhance user experiences. Whether it's a landing page, a complex application, or an entire website, I’m dedicated to building visually appealing and high-performing frontend solutions tailored to your needs. Let’s work together to make your vision a reality.",
         "icon_path": "/assets/svg/service_icons/frontend.svg"
     },
     {
         "id": "2",
         "title": "Backend Development",
-        "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
+        "intro": "I build secure, scalable backend systems with PHP, Laravel, Livewire, and MySQL to power dynamic web applications and support your business goals.",
+        "content": "I specialize in backend development that ensures your web applications run smoothly, securely, and efficiently. With expertise in PHP, Laravel, Livewire, and MySQL, I create robust backend systems that meet client requirements. From setting up database designs to sketching detailed ERD diagrams, I ensure a solid foundation for data management and functionality. My approach focuses on scalable and maintainable code that powers dynamic applications, enabling seamless user experiences and supporting your business needs. Let's build a backend that elevates your project.",
         "icon_path": "/assets/svg/service_icons/backend.svg"
     },
     {
         "id": "3",
         "title": "Web Design",
-        "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
+        "intro": "I implement visually appealing website designs and collaborate with design teams to create customized, user-centric designs that meet client needs.",
+        "content": "I bridge the gap between design and development by bringing visual concepts to life on the web. While I’m not a professional designer, I can implement website designs provided by UI/UX designers with precision, ensuring that the final product aligns with the design vision. I also sketch website layouts in Figma to visualize ideas and facilitate discussions. I value collaboration with design teams to fine-tune and create designs that perfectly match client requirements, making sure every detail enhances the user experience.",
         "icon_path": "/assets/svg/service_icons/responsive-design.svg"
     },
     {
         "id": "4",
         "title": "API Development",
-        "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
+        "intro": "I design and develop RESTful APIs that enable seamless data communication and integration for efficient web and mobile applications.",
+        "content": "I design and develop RESTful APIs that enable seamless data exchange and integration across platforms. With hands-on experience in creating APIs for a community mini online shop and a product showcase and inquiry website, I understand the importance of reliable, secure, and efficient API functionality. My focus is on building scalable APIs that simplify communication between frontend and backend systems, providing a solid foundation for interactive applications and enhancing user experiences. Let’s connect your systems with well-structured and easy-to-use APIs.",
         "icon_path": "/assets/svg/service_icons/api-interface.svg"
     },
     {
         "id": "5",
         "title": "Website Hosting",
-        "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
+        "intro": "I offer reliable website hosting solutions with expertise in cPanel and DigitalOcean, ensuring smooth and secure hosting for your site’s performance.",
+        "content": "While I’m not a professional in hosting, I offer reliable website hosting setup and support. I have experience hosting sites on cPanel and DigitalOcean, navigating both the cPanel dashboard and DigitalOcean droplets with ease. My experience includes hosting and maintaining an eCommerce site on DigitalOcean, ensuring smooth operation and accessibility. I provide a practical approach to hosting that supports your website’s performance and accessibility needs. Let’s get your website online and running efficiently.",
         "icon_path": "/assets/svg/service_icons/hosting-server-web.svg"
     },
     {
         "id": "6",
         "title": "Content Managment System (CMS)",
-        "intro": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iste minima accusantium magnam quis dolores dicta iusto adipisci laborum facere!",
+        "intro": "I create custom WordPress websites tailored to your requirements, offering fast, reliable, and easily manageable content management systems.",
+        "content": "I specialize in building efficient and customizable CMS websites using WordPress. With experience in developing new sites and creating custom WordPress themes to meet specific project requirements, I ensure that your CMS is tailored to your needs. I have also maintained several existing WordPress sites, gaining a solid understanding of the WordPress theme structure. My goal is to deliver fast, smooth, and reliable CMS solutions that empower you to manage your content with ease. Let’s build a CMS that enhances your website’s functionality and user experience.",
         "icon_path": "/assets/svg/service_icons/wordpress.svg"
     }
 ]

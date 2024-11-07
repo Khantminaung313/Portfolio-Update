@@ -3,7 +3,7 @@ import * as Icons from "../exports/techIcons"
 const SkillsCarousel = () => {
   return (
     <div>
-        <div className="scrolling-icons-container py-8">
+        <div className="scrolling-icons-container py-4 lg:py-8">
         <div className="icons">
             <div className="icon">
                 <img src={Icons.AlpineJs} alt="" />

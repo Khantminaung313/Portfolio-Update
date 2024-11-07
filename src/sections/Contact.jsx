@@ -60,13 +60,13 @@ const Contact = ({openPopup}) => {
 	};
 
 	return (
-		<section id="contact" className="relative lg:min-h-screen bg-white py-8">
+		<section id="contact" className="relative bg-white py-8">
 			<div>
 				<h1 id="section-title" className="section-title">
 					Contact <span>Me</span>
 				</h1>
 				<p className="intro">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit minus architecto facere ea aut. Labore doloremque architecto veniam maxime repellat.
+					Have a project in mind or any questions? Use the form below to get in touch—I look forward to connecting with you!
 				</p>
 			</div>
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">

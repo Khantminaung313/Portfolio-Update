@@ -1,4 +1,4 @@
-const ServiceCard = ({ service }) => {
+const ServiceCard = ({ service, onClick }) => {
 	return (
 		<div className="service-card">
 			<div className="mb-6 flex justify-center">
@@ -6,7 +6,7 @@ const ServiceCard = ({ service }) => {
 			</div>
 			<h3 className="card-title">{service.title}</h3>
 			<p className="card-intro">{service.intro}</p>
-			<button className="card-button">
+			<button className="card-button" onClick={onClick}>
 				<span>See More</span>
 			</button>
 		</div>

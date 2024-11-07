@@ -1,12 +1,16 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ServiceCard from "../components/ServiceCard";
+import ServicePopUp from "../components/ServicePopUp";
 import services from "../db/services.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Service = () => {
+	const [showPopUp, setShowPopUp] = useState(false);
+	const [selectedService, setSelectedService] = useState(null);
+
 	useEffect(() => {
 		gsap.to(".service-card", {
 			scrollTrigger: {
@@ -21,6 +25,15 @@ const Service = () => {
 		});
 	}, []);
 
+	const handleClick = ({service}) => {
+		setSelectedService(service);
+		setShowPopUp(true);
+	};
+
+	const closePopup = () => {
+		setShowPopUp(false);
+	};
+
 	return (
 		<section
 			id="services"
@@ -30,14 +43,15 @@ const Service = () => {
 				<span>My</span> Services
 			</h1>
 			<p className="intro">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-				voluptas incidunt error accusantium sit quae recusandae
-				voluptatibus quas placeat maxime!
+			I provide comprehensive web development services, from frontend and backend development to web design, API integration, CMS customization, and reliable hosting solutions.
 			</p>
+			{selectedService !== null && showPopUp === true && (
+				<ServicePopUp selectedService={selectedService} onClick={() => closePopup()} />
+			)}
 
 			<div className="grid grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8 pb-6">
 				{services.map((service) => (
-					<ServiceCard key={service.id} service={service} />
+					<ServiceCard key={service.id} service={service} onClick={() => handleClick({service})}/>
 				))}
 			</div>
 		</section>

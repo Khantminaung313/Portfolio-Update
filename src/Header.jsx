@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import dean from "./assets/Dean.pdf";
+import ButtonDefault from "./components/ButtonDefault";
 
 const Header = () => {
 	const [menu, setMenu] = useState(false);
@@ -72,7 +73,7 @@ const Header = () => {
 		const handleScroll = () => {
 			const navBar = navRef.current;
 			const scrollPosition = window.scrollY;
-			if (scrollPosition > 40) {
+			if (scrollPosition > 100) {
 				navBar.classList.add("full-width-nav");
 			} else {
 				navBar.classList.remove("full-width-nav");
@@ -112,13 +113,14 @@ const Header = () => {
 							Contact
 						</a>
 					</nav>
-					<a
+					{/* <a
 						href={dean}
 						className="px-8 py-2 bg-slate-500 text-white text-sm cursor-pointer rounded-full border hover:bg-soft_blue transition-all duration-150"
 						download
 					>
 						Download CV
-					</a>
+					</a> */}
+					<ButtonDefault link={dean} text={"Download CV"} attr={{ download: "resume@dean" }} />
 				</div>
 			</div>
 
@@ -130,27 +132,27 @@ const Header = () => {
 				}`}
 			>
 				<ul className="pt-16 pb-2 text-center divide-y divide-slate-200">
-					<li className={`mobile-menu-item ${activeLink === '#' ? 'bg-slate-300' : ''}`}>
+					<li className={`mobile-menu-item ${activeLink === '#' ? 'text-purple' : ''}`}>
 						<a onClick={() => closeMenu()} href="#">
 							Home
 						</a>
 					</li>
-					<li className={`mobile-menu-item ${activeLink === '#about' ? 'bg-slate-300' : ''}`}>
+					<li className={`mobile-menu-item ${activeLink === '#about' ? 'text-purple' : ''}`}>
 						<a onClick={() => closeMenu()} href="#about">
 							About
 						</a>
 					</li>
-					<li className={`mobile-menu-item ${activeLink === '#services' ? 'bg-slate-300' : ''}`}>
+					<li className={`mobile-menu-item ${activeLink === '#services' ? 'text-purple' : ''}`}>
 						<a onClick={() => closeMenu()} href="#services">
 							Services
 						</a>
 					</li>
-					<li className={`mobile-menu-item ${activeLink === '#portfolio' ? 'bg-slate-300' : ''}`}>
+					<li className={`mobile-menu-item ${activeLink === '#portfolio' ? 'text-purple' : ''}`}>
 						<a onClick={() => closeMenu()} href="#portfolio">
 							Portfolio
 						</a>
 					</li>
-					<li className={`mobile-menu-item ${activeLink === '#contact' ? 'bg-slate-300' : ''}`}>
+					<li className={`mobile-menu-item ${activeLink === '#contact' ? 'text-purple' : ''}`}>
 						<a onClick={() => closeMenu()} href="#contact">
 							Contact
 						</a>

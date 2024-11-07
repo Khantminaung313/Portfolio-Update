@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CommingSoon from "../components/CommingSoon";
 import ProjectCard from "../components/ProjectCard";
+import ProjectPopUp from "../components/ProjectPopUp";
 import categories from "../db/categories.json";
 import projects from "../db/projects.json";
 
@@ -64,9 +65,7 @@ const Portfolio = () => {
 				<span>My </span> Portfolio
 			</h1>
 			<p className="intro">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
-				minus architecto facere ea aut. Labore doloremque architecto
-				veniam maxime repellat.
+				Explore some of the projects I&apos;ve developed, showcasing my skills in web development, design, and functionality.
 			</p>
 
 			<div className="mb-8">
@@ -98,39 +97,9 @@ const Portfolio = () => {
 			</div>
 
 			{selectedProject !== null && showProjectDetail === true && (
-				<div className="fixed top-0 left-0 w-full h-full bg-slate-700/50 flex items-center justify-center z-50">
-					<div className="w-[90%] sm:max-w-[500px] lg:max-w-[700px] max-h-[80vh] mx-auto bg-white shadow p-8 lg:p-6 rounded relative">
-						<button
-							className="absolute -right-4 -top-4 inline-block px-4 py-2 border bg-slate-600 text-white rounded-full z-10"
-							onClick={() => closeProjectDetail()}
-						>
-							x
-						</button>
-						<h3 className="text-soft_blue text-2xl font-semibold mb-6">
-							Name - {selectedProject.title}
-						</h3>
-
-						<article>
-							<p className="text-sm leading-6 tracking-wide mb-4 text-justify text-slate-600 indent-8">
-								{selectedProject.first_desc}
-							</p>
-							<p className="text-sm leading-6 tracking-wide mb-4 text-justify text-slate-600 indent-8">
-								{selectedProject.second_desc}
-							</p>
-						</article>
-						<p className="text-sm mt-8">
-							Visit to -{" "}
-							<a
-								className="text-soft_blue underline"
-								href={selectedProject.url}
-								target="_blank"
-							>
-								{selectedProject.title}
-							</a>
-						</p>
-					</div>
-				</div>
+				<ProjectPopUp selectedProject={selectedProject} onClick={() => closeProjectDetail()} />
 			)}
+
 
 			{paginatedProjects.length > 0 ? (
 				<div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
