@@ -5,7 +5,7 @@ import Bootstrap from "../assets/svg/tech-icons/core/Bootstrap.svg";
 import CSS3 from "../assets/svg/tech-icons/core/CSS3.svg";
 import HTML5 from "../assets/svg/tech-icons/core/HTML5.svg";
 import Javascript from "../assets/svg/tech-icons/core/JavaScript.svg";
-import JQuery from "../assets/svg/tech-icons/core/JQuery.svg";
+import JQuery from "../assets/svg/tech-icons/core/jQuery.svg";
 import JSON from "../assets/svg/tech-icons/core/JSON.svg";
 import Laravel from "../assets/svg/tech-icons/core/Laravel.svg";
 import Livewire from "../assets/svg/tech-icons/core/Livewire.svg";
