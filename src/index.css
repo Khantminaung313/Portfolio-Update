@@ -198,9 +198,4 @@ section .intro{
 .icon img{
   width: 100%;
   height: 100%;
-  /* filter: grayscale(1); */
-}
-
-.icon img:hover{
-  /* filter: grayscale(0); */
 }
