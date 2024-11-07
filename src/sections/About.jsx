@@ -14,7 +14,7 @@ const About = () => {
 	return (
 		<section
 			id="about"
-			className="panel w-screen lg:min-h-screen relative flex items-center justify-center bg-white py-8 lg:py-0"
+			className="panel w-screen lg:min-h-screen relative flex flex-col items-center justify-center bg-white py-8 lg:py-0"
 		>
 			<div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4">
 				<div className="hidden lg:flex items-start justify-center">
@@ -149,6 +149,9 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+
+			<br />
+			<br />
 		</section>
 	);
 };

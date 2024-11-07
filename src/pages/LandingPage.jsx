@@ -2,12 +2,13 @@ import Lottie from "lottie-react";
 import { useState } from "react";
 import thankyou from "../assets/thank-you.json";
 import ParticleComponent from "../components/ParticleComponent";
+import ToTop from "../components/ToTop";
 import About from "../sections/About";
 import Contact from "../sections/Contact";
 import Hero from "../sections/Hero";
 import Portfolio from "../sections/Portfolio";
 import Service from "../sections/Service";
-import ToTop from "../components/ToTop";
+import Skills from "../sections/Skills";
 const LandingPage = () => {
   const [popup, setPopup] = useState(false);
 
@@ -52,6 +53,7 @@ const LandingPage = () => {
       <ToTop />
       <Hero />
       <About />
+			<Skills />
       <Service />
       <Portfolio />
       <Contact openPopup={openPopup} />

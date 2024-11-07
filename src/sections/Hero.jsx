@@ -30,12 +30,12 @@ const Hero = () => {
 		<>
 			<div
 				id="hero"
-				className="min-h-screen relative overflow-hidden flex justify-center items-center"
+				className="min-h-screen relative overflow-hidden flex justify-center items-center bg-gradient-to-br from-slate-600/50 via-[#5d3fcb]"
 			>
 				<div className="w-[500px] flex flex-col items-center justify-center">
 					<div
 						id="profile"
-						className="profile rounded-full size-[200px] overflow-hidden border-[5px] border-purple mx-auto shadow shadow-slate-200"
+						className="profile rounded-full size-[200px] overflow-hidden border-[5px] border-soft_blue mx-auto shadow shadow-slate-200"
 					>
 						<img className="w-full h-full" src={dean} alt="" />
 					</div>

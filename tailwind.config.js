@@ -15,7 +15,7 @@ export default {
         "tint_blue": "#1230C3",
         "soft_blue": "#1288C3",
         "purple": "#4D12C3"
-      }
+      },
     },
   },
   plugins: [],
