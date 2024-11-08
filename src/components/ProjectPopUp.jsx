@@ -50,6 +50,19 @@ const ProjectPopUp = ({ selectedProject, onClick }) => {
 							{selectedProject.title}
 						</a>
 					</p>
+					{selectedProject.category.includes('4') && (
+						<p className="text-sm mt-8">
+						Visit to -{" "}
+						<a
+							className="text-soft_blue underline"
+							href="https://github.com/Khantminaung313/Javascript-Mini-Projects"
+							target="_blank"
+						>
+							JS Mini Projects
+						</a>
+					</p>
+					)}
+					
 				</div>
 			</div>
 		</div>

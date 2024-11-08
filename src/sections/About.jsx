@@ -145,7 +145,7 @@ const About = () => {
 						</ul>
 					</div>
 					<div className="mt-10 lg:mt-20">
-						<ButtonDefault link={dean} text={"Download CV"} attr={{ download: "resume@dean" }} />
+						<ButtonDefault link={dean} text={"Get Resume"} attr={{ download: "resume@dean" }} />
 					</div>
 				</div>
 			</div>

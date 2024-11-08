@@ -113,14 +113,7 @@ const Header = () => {
 							Contact
 						</a>
 					</nav>
-					{/* <a
-						href={dean}
-						className="px-8 py-2 bg-slate-500 text-white text-sm cursor-pointer rounded-full border hover:bg-soft_blue transition-all duration-150"
-						download
-					>
-						Download CV
-					</a> */}
-					<ButtonDefault link={dean} text={"Download CV"} attr={{ download: "resume@dean" }} />
+					<ButtonDefault link={dean} text={"Get Resume"} attr={{ download: "resume@dean" }} />
 				</div>
 			</div>
 
