@@ -29,7 +29,7 @@
     {
         "id": 4,
         "title": "Connect-4",
-        "category": "[2, 4]",
+        "category": "[4]",
         "first_desc": "This Connect 4 Game is an interactive, strategy-based project developed with ReactJS, featuring a smart computer player to enhance the challenge.",
         "second_desc": "Built as a learning exercise, this project helped me deepen my understanding of React components, hooks, and game logic. It offers an engaging user experience while demonstrating my ability to create dynamic, responsive applications with React.",
         "thumbnail": "/assets/images/project-images/connect-4.png",
