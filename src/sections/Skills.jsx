@@ -3,7 +3,7 @@ import ToolsCarousel from "../components/ToolsCarousel"
 
 const Skills = () => {
   return (
-    <div className="bg-gradient-to-r from-slate-500 via-purple/60 relative z-0">
+    <div id="skill-container" className="bg-gradient-to-r from-slate-600/80 via-[#6e31c2] relative z-0">
         <SkillsCarousel />
         <ToolsCarousel />
     </div>

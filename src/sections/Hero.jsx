@@ -22,7 +22,7 @@ const Hero = () => {
 		tl.fromTo(
 			".title",
 			{ scale: 0 },
-			{ duration: 1, scale: 1, stagger: 0.1 }
+			{ duration: 1, scale: 1, stagger: 0.3 }
 		);
 	}, []);
 
@@ -30,7 +30,7 @@ const Hero = () => {
 		<>
 			<div
 				id="hero"
-				className="min-h-screen relative overflow-hidden flex justify-center items-center bg-gradient-to-br from-slate-600/50 via-[#5d3fcb]"
+				className="min-h-screen relative overflow-hidden flex justify-center items-center bg-gradient-to-br from-slate-600/80 via-[#793fcb]"
 			>
 				<div className="w-[500px] flex flex-col items-center justify-center">
 					<div
@@ -47,7 +47,7 @@ const Hero = () => {
 							"A Fullstack Developer",
 							"A Frontend Developer",
 							"A Backend Developer",
-							"A Web Developer"
+							"A Web Developer",
 						]}
 						typeSpeed={50}
 						backSpeed={30}
@@ -56,7 +56,11 @@ const Hero = () => {
 						className="title text-center text-2xl xl:text-3xl font-bebas-neue mb-6 text-white"
 					/>
 					<div className="absolute bottom-8 left-0 w-full z-30 text-center animate-bounce">
-						<a href="#about" className="bg-clip-text text-transparent bg-gradient-to-b from-purple to-soft_blue font-extrabold text-4xl" title="About Me">
+						<a
+							href="#about"
+							className="bg-clip-text text-transparent bg-gradient-to-b from-purple to-soft_blue font-extrabold text-4xl"
+							title="About Me"
+						>
 							&#x2B9F;
 						</a>
 					</div>

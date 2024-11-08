@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,42 +15,48 @@ html{
   scroll-behavior: smooth;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-#navbar{
+#ts-particles {
+  position: absolute;
+  z-index: -2;
+}
+
+
+/* Nav bar */
+#navbar {
   clip-path: polygon(0% 0%, 100% 0%, 99.5% 100%, 0.5% 100%);
 }
 
-.full-width-nav{
+.full-width-nav {
   width: 100% !important;
   top: 0% !important;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important;
 }
 
-section{
+section {
   @apply w-full lg:pt-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-28;
 }
 
-section .section-title{
+section .section-title {
   @apply text-center text-3xl lg:text-4xl font-anton tracking-wide py-8;
 }
 
-section .section-title span{
+section .section-title span {
   @apply text-soft_blue;
 }
 
-section .intro{
+section .intro {
   @apply text-slate-600 max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] mx-auto text-center mb-8 lg:mb-12 text-sm lg:text-base;
 }
 
-
-.service-card{
+.service-card {
   @apply w-full flex flex-col rounded p-2 sm:p-4 lg:p-6 border border-dotted border-soft_blue shadow hover:shadow-lg hover:shadow-soft_blue/70 bg-white translate-y-[100px] opacity-0 relative;
 }
 
-.service-card::before{
+.service-card::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -63,7 +69,7 @@ section .intro{
   transform-origin: bottom left;
 }
 
-#about-image-wrapper::before{
+#about-image-wrapper::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -71,33 +77,28 @@ section .intro{
   border: 8px solid #1288C3;
   left: 30px;
   top: 30px;
-  box-shadow: 15px 0px 20px 10px #cbd5e0,inset 15px 0px 8px 0px #cbd5e0;
+  box-shadow: 15px 0px 20px 10px #cbd5e0, inset 15px 0px 8px 0px #cbd5e0;
   z-index: -1;
 }
 
-#ts-particles{
-  position: absolute;
-  z-index: -2;
-}
-
-
-.card-title{
+.card-title {
   @apply font-poppins font-bold text-soft_blue text-sm sm:text-base lg:text-lg line-clamp-2 flex-grow;
 }
 
-.card-intro{
+.card-intro {
   @apply text-xs sm:text-sm line-clamp-3 text-slate-600 my-4;
 }
 
-.card-button{
+.card-button {
   @apply w-[100px] h-[24px] sm:h-[35px] mx-auto sm:mx-0 rounded-full bg-slate-500 text-white transition-all duration-100 ease-linear inline-block overflow-hidden relative z-10;
 }
 
-.card-button span{
+.card-button span {
   @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full text-center text-[10px] sm:text-base leading-6 sm:leading-8;
 }
 
-.card-button::after,.card-button::before{
+.card-button::after,
+.card-button::before {
   content: '';
   position: absolute;
   width: 0%;
@@ -108,46 +109,72 @@ section .intro{
   transition: all 300ms ease-in-out;
 }
 
-.card-button::before{
+.card-button::before {
   left: 0;
 }
 
-.card-button::after{
+.card-button::after {
   right: 0;
 }
 
-.card-button:hover.card-button::before{
+.card-button:hover.card-button::before {
   width: 50%;
 }
-.card-button:hover.card-button::after{
+
+.card-button:hover.card-button::after {
   width: 50%;
 }
 
 
 /* Conact Form */
-#contact-form label{
+#contact-form label {
   @apply mb-2 block text-slate-600 text-sm lg:text-base;
 }
 
-#contact-form input{
+#contact-form input {
   @apply w-full text-sm border border-soft_blue text-slate-700 px-3 py-2 rounded focus:outline-none;
 }
 
-#contact-form textarea{
+#contact-form textarea {
   @apply w-full text-sm border border-soft_blue text-slate-700 accent-soft_blue px-3 py-2 rounded focus:outline-none;
 }
 
 /* Mobile Menu */
-.mobile-menu-item{
+.mobile-menu-item {
   @apply py-2 hover:bg-slate-300 transition-all duration-100 ease-linear;
 }
 
-.mobile-menu-item a{
+.mobile-menu-item a {
   @apply cursor-pointer block;
 }
 
 
 /* ------------------------------------------------------- Scrolling icons ------------------------------------------------ */
+#skill-container::before {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #1288C3, #4D12C3);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+#skill-container::after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(45deg, #1288C3, #4D12C3);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
 .scrolling-icons-container {
   overflow: hidden;
   white-space: nowrap;
@@ -156,7 +183,7 @@ section .intro{
   width: 100%;
 }
 
-.scrolling-icons-container:hover .icons{
+.scrolling-icons-container:hover .icons {
   animation-play-state: paused;
 }
 
@@ -165,7 +192,7 @@ section .intro{
   animation: scroll 20s infinite linear;
 }
 
-.icon img{
+.icon img {
   width: 100%;
   height: 100%;
 }
@@ -174,29 +201,32 @@ section .intro{
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
 }
 
-.scrolling-icons-container .icons .icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 40px;
+@media (width > 1080px) {
+  .scrolling-icons-container .icons .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 40px;
+  }
 }
 
-@media (max-width: 1080px) {
+@media (width <=1080px) {
   .scrolling-icons-container .icons .icon {
     width: 40px;
     height: 40px;
     margin: 0 30px;
   }
 }
-@media (max-width: 768px) {
-  .icon {
+
+@media (width < 768px) {
+  .scrolling-icons-container .icons .icon {
     width: 30px;
     height: 30px;
-    margin: 0 20px;
+    margin: 0 15px;
   }
 }
-
