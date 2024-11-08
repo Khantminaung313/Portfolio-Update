@@ -58,7 +58,7 @@ const Hero = () => {
 					<div className="absolute bottom-8 left-0 w-full z-30 text-center animate-bounce">
 						<a
 							href="#about"
-							className="bg-clip-text text-transparent text-white font-extrabold text-4xl"
+							className="bg-clip-text text-transparent bg-gradient-to-bl from-white via-purple to-soft_blue font-extrabold text-4xl"
 							title="About Me"
 						>
 							&#x21e9;
