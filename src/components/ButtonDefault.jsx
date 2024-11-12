@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ButtonDefault = ({text, link, attr}) => {
   return (
     <>
@@ -5,5 +7,11 @@ const ButtonDefault = ({text, link, attr}) => {
     </>
   )
 }
+
+ButtonDefault.propTypes = {
+	text: PropTypes.string.isRequired,
+	link: PropTypes.string.isRequired,
+	attr: PropTypes.object.isRequired
+};
 
 export default ButtonDefault

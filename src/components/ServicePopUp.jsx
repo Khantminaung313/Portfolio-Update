@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import PropTypes from "prop-types";
 import { useEffect } from "react";
 
 const ServicePopUp = ({ selectedService, onClick }) => {
@@ -40,5 +41,13 @@ const ServicePopUp = ({ selectedService, onClick }) => {
 		</div>
 	);
 };
+
+ServicePopUp.propTypes = {
+	selectedService: PropTypes.shape({
+		title: PropTypes.string,
+		content: PropTypes.content
+	}).isRequired,
+	onClick: PropTypes.func.isRequired
+}
 
 export default ServicePopUp;

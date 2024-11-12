@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import PropTypes from "prop-types";
 import { useEffect } from "react";
 
 const ProjectPopUp = ({ selectedProject, onClick }) => {
@@ -67,6 +68,17 @@ const ProjectPopUp = ({ selectedProject, onClick }) => {
 			</div>
 		</div>
 	);
+};
+
+ProjectPopUp.propTypes = {
+	selectedProject: PropTypes.shape({
+		title: PropTypes.string,
+		first_desc: PropTypes.string,
+		second_desc: PropTypes.string,
+		url: PropTypes.string,
+		category: PropTypes.arrayOf(PropTypes.string),
+	}).isRequired,
+	onClick: PropTypes.func.isRequired,
 };
 
 export default ProjectPopUp;

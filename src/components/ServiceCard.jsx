@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ServiceCard = ({ service, onClick }) => {
 	return (
 		<div className="service-card">
@@ -12,5 +14,14 @@ const ServiceCard = ({ service, onClick }) => {
 		</div>
 	);
 };
+
+ServiceCard.propTypes = {
+	service: PropTypes.shape({
+		icon_path: PropTypes.string,
+		title: PropTypes.string,
+		intro: PropTypes.string
+	}).isRequired,
+	onClick: PropTypes.func.isRequired
+}
 
 export default ServiceCard;

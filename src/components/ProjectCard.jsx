@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import PropTypes from "prop-types";
 import { useEffect } from "react";
 
 gsap.registerPlugin('ScrollTrigger');
@@ -43,5 +44,14 @@ const ProjectCard = ({ project, onClick }) => {
 		</div>
 	);
 };
+
+ProjectCard.propTypes = {
+	project: PropTypes.shape({
+		title: PropTypes.string,
+		thumbnail: PropTypes.string
+	}).isRequired,
+	onClick: PropTypes.func.isRequired,
+};
+
 
 export default ProjectCard;

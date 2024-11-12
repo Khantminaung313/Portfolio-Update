@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import Lottie from "lottie-react";
+import PropTypes from "prop-types";
 import { useRef, useState } from "react";
 import contact from "../assets/Animation - 1730349963080.json";
 import send from "../assets/send.svg";
@@ -158,5 +159,9 @@ const Contact = ({openPopup}) => {
 		</section>
 	);
 };
+
+Contact.propTypes = {
+	openPopup: PropTypes.func.isRequired
+}
 
 export default Contact;
